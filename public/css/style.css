@@ -1,0 +1,75 @@
+#sidebar{
+    background-color: #010916;
+}
+.item{
+    margin-bottom: 25px;
+}
+.item a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+.item a img{
+    width: 30px;
+    height: 30px;
+}
+.logo{
+    background: linear-gradient(to right, #eb2ba5, #77066e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 40px;
+    font-weight: bolder;
+}
+#dashboard{
+    font-size: 16px!important;
+}
+.project{
+    background-color: #03122a;
+}
+.service{
+    background-color: rgb(6, 113, 77);
+}
+#education{
+    color: #03374f;
+}
+#table{
+    background-color: #e8eeea;
+}
+#project{
+    color: #eb5e2b;
+}
+#recent-project{
+    color: #0b227e;
+}
+.card-recent-project{
+    background-color: #091830!important;
+    border-radius: 5px;
+}
+.education{
+    background: linear-gradient(to right, #eb2ba5, #77066e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.edu-title{
+    color: #03374f;
+}
+.skill{
+    color: #eb5e2b;
+}
+.review{
+    color: #a51876;
+}
+.skills{
+    background-color: #05293a !important;
+    color: white;
+    border-radius: 5px;
+    height: 30vh;
+}
+.services{
+    color: #0a5c82;
+}
+.service_card{
+    color: white;
+    background-color: #05293a !important;
+    border-radius: 5px;
+}

@@ -9,7 +9,7 @@
                         <h5 class="text-white">
                             <img src="{{ asset('images/project.svg') }}" alt="" height="30px" width="30px">
                             Total Project</h5>
-                        <h2 class="counters" data-count="300">0</h2>
+                        <h2 class="counters text-white" data-count="300">0</h2>
                     </div>
                 </div>
             </div>
@@ -19,7 +19,7 @@
                         <h5 class="text-white">
                             <img src="{{ asset('images/service.svg') }}" alt="" height="30px" width="30px">
                             Total Service</h5>
-                        <h2 class="counters" data-count="150">0</h2>
+                        <h2 class="counters text-white" data-count="150">0</h2>
                     </div>
                 </div>
             </div>
@@ -121,7 +121,7 @@
             </div>
             {{-- <div class="mt-4"> --}}
                 <div class="col-4 mt-4">
-                    <div class="card shadow-lg rounded-lg" id="card-recent-project">
+                    <div class="card shadow-lg rounded-lg card-recent-project" id="card-recent-project">
                         <div class="card-body text-white">
                             <img src="{{ asset('images/education.svg') }}" alt="" height="60px" width="60px">
                             <div class="d-flex justify-content-between">
@@ -136,7 +136,7 @@
                     </div>
                 </div>
                 <div class="col-4 mt-4">
-                    <div class="card shadow-lg rounded-lg" id="card-recent-project">
+                    <div class="card shadow-lg rounded-lg card-recent-project" id="card-recent-project">
                         <div class="card-body text-white">
                             <img src="{{ asset('images/education.svg') }}" alt="" height="60px" width="60px">
                             <div class="d-flex justify-content-between">
@@ -151,7 +151,7 @@
                     </div>
                 </div>
                 <div class="col-4 mt-4">
-                    <div class="card shadow-lg rounded-lg" id="card-recent-project">
+                    <div class="card shadow-lg rounded-lg card-recent-project" id="card-recent-project">
                         <div class="card-body text-white">
                             <img src="{{ asset('images/education.svg') }}" alt="" height="60px" width="60px">
                             <div class="d-flex justify-content-between">

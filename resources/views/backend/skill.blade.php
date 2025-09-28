@@ -60,7 +60,7 @@
         <h3 class="review">Skills Review</h3>
         <div class="row mt-4">
             <div class="col-3">
-                <div class="card shadow" id="framework">
+                <div class="card shadow skills" id="framework">
                     <div class="card-body">
                         <h5>Framework</h5>
                         <ul>
@@ -73,7 +73,7 @@
                 </div>
             </div>
             <div class="col-3">
-                <div class="card shadow" id="program">
+                <div class="card shadow skills" id="program">
                     <div class="card-body">
                         <h5>Programming Language</h5>
                         <ul>
@@ -88,7 +88,7 @@
                 </div>
             </div>
             <div class="col-3">
-                <div class="card shadow" id="database">
+                <div class="card shadow skills" id="database">
                     <div class="card-body">
                         <h5>Database</h5>
                         <ul>
@@ -100,7 +100,7 @@
                 </div>
             </div>
             <div class="col-3">
-                <div class="card shadow" id="tool">
+                <div class="card shadow skills" id="tool">
                     <div class="card-body">
                         <h5>Tools</h5>
                         <ul>

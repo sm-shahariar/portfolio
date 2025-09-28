@@ -21,7 +21,7 @@
         <h3 class="review">Services</h3>
         <div class="row mt-4">
             <div class="col-3">
-                <div class="card shadow rounded" id="service1">
+                <div class="card shadow rounded service_card" id="service1">
                     <div class="card-body">
                         <h5>Frontend Design</h5>
                         <p class="mt-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias, iste quaerat! Ipsum, itaque?</p>
@@ -29,7 +29,7 @@
                 </div>
             </div>
             <div class="col-3">
-                <div class="card shadow rounded" id="service2">
+                <div class="card shadow rounded service_card" id="service2">
                     <div class="card-body">
                         <h5>Frontend Development</h5>
                         <p class="mt-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias, iste quaerat! Ipsum, itaque?</p>
@@ -37,7 +37,7 @@
                 </div>
             </div>
             <div class="col-3">
-                <div class="card shadow rounded" id="service3">
+                <div class="card shadow rounded service_card" id="service3">
                     <div class="card-body">
                         <h5>Backend Development</h5>
                         <p class="mt-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias, iste quaerat! Ipsum, itaque?</p>
@@ -45,7 +45,7 @@
                 </div>
             </div>
             <div class="col-3">
-                <div class="card shadow rounded" id="service4">
+                <div class="card shadow rounded service_card" id="service4">
                     <div class="card-body">
                         <h5>API Testing</h5>
                         <p class="mt-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias, iste quaerat! Ipsum, itaque?</p>

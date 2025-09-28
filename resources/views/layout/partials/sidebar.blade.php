@@ -2,7 +2,7 @@
     <div class="sidebar-header">
         <h5 class="mb-0 text-white mt-3 text-center">Navigation</h5>
     </div>
-    <div class="position-sticky pt-3">
+    <div class="position-sticky pt-3 mt-5">
         <ul class="nav flex-column ms-5">
             <li class="item">
                 <a href="#"><img src="{{ asset('images/dashboard-apps.svg') }}" alt="">Dashboard</a>
