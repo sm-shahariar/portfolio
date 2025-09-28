@@ -73,3 +73,9 @@
     background-color: #05293a !important;
     border-radius: 5px;
 }
+.add-skill{
+    border:none;
+    border-radius: 5px;
+    font-weight: bolder;
+    font-size: 20px;
+}

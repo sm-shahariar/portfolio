@@ -31,8 +31,28 @@
     {{-- </div> --}}
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
-    
+
     @stack('script')
+
+    <script>
+        function toast(message, type){
+            const Toast = Swal.mixin({
+                toast: true,
+                position: 'top-end',
+                showConfirmButton: false,
+                timer: 3000,
+                timeProgressBar: true,
+                didOpen: (toast) => {
+                    toast.onmouseenter () = Swal.stopTimer()
+                    toast.onmouseleave () = Swal.resumeTimer()
+                }
+            });
+            Toast.fire({
+                icon: type,
+                title: message
+            });
+        }
+    </script>
 
     <script>
         @if (Session::has('success'))
@@ -46,7 +66,7 @@
         @endif
     </script>
 
-   
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>

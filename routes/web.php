@@ -7,9 +7,9 @@ use App\Http\Controllers\backend\SkillController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 Route::get('/dashboard', function () {
     return view('backend.dashboard');
@@ -20,7 +20,7 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 
-    // Main Option
+    
     // Route::resource('/educations', EducationController::class);
     // Route::resource('/skills', SkillController::class);
     // Route::resource('/services', ServiceController::class);
@@ -28,24 +28,16 @@ Route::middleware('auth')->group(function () {
 
 });
     Route::resource('/educations', EducationController::class);
-
+    Route::resource('/services', ServiceController::class);
 
 Route::get('/personal', function(){
     return view('backend.dashboard');
 });
-// Route::get('/education', function(){
-    // return view('backend.education');
-// });
-Route::get('/skills', function(){
-    return view('backend.skill');
-});
-Route::get('/services', function(){
-    return view('backend.service');
-});
+
 Route::get('/projects', function() {
     return view('backend.project');
 });
-Route::get('/portfolio', function() {
+Route::get('/', function() {
     return view('frontend.portfolio');
 });
 

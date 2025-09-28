@@ -8,11 +8,11 @@
                 <a href="#"><img src="{{ asset('images/dashboard-apps.svg') }}" alt="">Dashboard</a>
             </li>
             <li class="item">
-                <a href="#"><img src="{{ asset('images/education.svg') }}" alt="">Education</a>
+                <a href="{{ route('educations.index') }}"><img src="{{ asset('images/education.svg') }}" alt="">Education</a>
             </li>
-            <li class="item">
-                <a href="#"><img src="{{ asset('images/qualification.svg') }}" alt="">Skill</a>
-            </li>
+            {{-- <li class="item">
+                <a href="{{ route('skills.index') }}"><img src="{{ asset('images/qualification.svg') }}" alt="">Skill</a>
+            </li> --}}
             <li class="item">
                 <a href="#"><img src="{{ asset('images/service.svg') }}" alt="">Service</a>
             </li>
