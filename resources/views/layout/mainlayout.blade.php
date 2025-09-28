@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
     <title>Portfolio</title>
 </head>
 <body>
@@ -28,7 +29,26 @@
 
         </div>
     {{-- </div> --}}
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    
     @stack('script')
+
+    <script>
+        @if (Session::has('success'))
+            toast("{{ Session::get('success') }}", 'success');
+        @elseif(Session::has('error'))
+            toast("{{ Session::get('error') }}", 'error');
+        @elseif (Session::has('info'))
+            toast("{{ Session::get('info') }}", 'info');
+        @elseif (Session::has('warning'))
+            toast("{{ Session::get('warning') }}", 'warning');
+        @endif
+    </script>
+
+   
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="{{ asset('js/main.js') }}"></script>
 

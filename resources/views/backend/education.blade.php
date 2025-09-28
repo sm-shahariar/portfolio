@@ -4,7 +4,8 @@
 
     <div class="container shadow mt-3 ms-2 p-3 bg-white rounded">
         <h3 class="education">Education & Qualification</h3>
-        <form class="mt-4" action="#" method="">
+        <form class="mt-4" id="storeForm" action="{{ route('educations.store') }}" method="POST">
+            @csrf
             <div class="row">
                 <!-- Left side inputs -->
                 <div class="col-md-6">
@@ -33,7 +34,7 @@
             </div>
 
             <div class="text-end mt-3">
-                <button type="submit" class="btn btn-outline-primary rounded-lg">Submit</button>
+                <button type="submit" class="btn btn-outline-primary rounded-lg" id="submit_btn">Submit</button>
             </div>
         </form>
         <div class="row">
@@ -85,3 +86,42 @@
         </div>
     </div>
 @endsection
+
+@push('script')
+    <script>
+        $(document).ready(function(){
+            $('#storeForm').submit(function(e){
+                e.preventDefault();
+                let SubmitButton = $('#submit_btn');
+                let formData = new FormData(this);
+
+                $.ajax({
+                    type:$(this).attr('method'),
+                    url:$(this).attr('action'),
+                    data:formData,
+                    cache:false,
+                    contentType:false,
+                    processData:false,
+                }).done(function(response){
+                    if(response.type == 'success'){
+                        toastr.success(response.message);
+
+                        setTimeout(() => {
+                            location.reload();
+                        }, 3000);
+                        
+                    }else{
+                        toastr.error(response.message);
+                    }
+                }).fail(function(xhr){
+                    let response = xhr.responseJSON;
+                    if(response && response.errors){
+                        $.each(response.errors,function(key,value){
+                            toastr.error(value);
+                        })
+                    }
+                });
+            });
+        });
+    </script>
+@endpush

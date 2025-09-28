@@ -3,33 +3,70 @@
 namespace App\Http\Controllers\backend;
 
 use App\Http\Controllers\Controller;
+use App\Models\Education;
 use Illuminate\Http\Request;
+use Throwable;
+use Illuminate\Support\Facades\DB;
 
 class EducationController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
+
     public function index()
     {
-        //
+        $educations = Education::all();
+        if($educations->isEmpty()){
+            return view('backend.education');
+        }else{
+            return view('backend.education', compact('educations'));
+        }
     }
 
-    /**
-     * Show the form for creating a new resource.
-     */
+
     public function create()
     {
-        //
+        return view('backend.education');
+
     }
 
-    /**
-     * Store a newly created resource in storage.
-     */
-    public function store(Request $request)
-    {
-        //
+    
+   public function store(Request $request)
+{
+    $request->validate([
+        'degree' => 'required|string|max:255|unique:educations,degree',
+        'year' => 'required|integer',
+        'university' => 'required|string|max:255',
+        'is_true' => 'required|boolean',
+    ]);
+
+    DB::beginTransaction();
+
+    try {
+        $education = new Education();
+        $education->degree = $request->degree;
+        $education->year = $request->year;
+        $education->university = $request->university;
+        $education->is_true = $request->is_true;
+        $education->save();
+
+        DB::commit();
+
+        // Return JSON for AJAX
+        return response()->json([
+            'message' => 'Education added successfully.',
+            'type' => 'success',
+            'education' => $education // optional, can return new record
+        ], 200);
+
+    } catch (\Throwable $th) {
+        DB::rollBack();
+
+        return response()->json([
+            'message' => 'Something went wrong: ' . $th->getMessage(),
+            'type' => 'error'
+        ], 500);
     }
+}
+
 
     /**
      * Display the specified resource.

@@ -27,13 +27,15 @@ Route::middleware('auth')->group(function () {
     // Route::resource('/projects', ProjectController::class);
 
 });
+    Route::resource('/educations', EducationController::class);
+
 
 Route::get('/personal', function(){
     return view('backend.dashboard');
 });
-Route::get('/education', function(){
-    return view('backend.education');
-});
+// Route::get('/education', function(){
+    // return view('backend.education');
+// });
 Route::get('/skills', function(){
     return view('backend.skill');
 });
