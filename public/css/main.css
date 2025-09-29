@@ -232,6 +232,9 @@ header {
 .education{
     margin-top: 9%;
 }
+#educations{
+    margin-top: 6%;
+}
 .edu{
     background-color: #010916 !important;
     color: #ffffff;

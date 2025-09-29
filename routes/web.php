@@ -21,22 +21,17 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 
     
-    // Route::resource('/educations', EducationController::class);
+    Route::resource('/educations', EducationController::class);
     // Route::resource('/skills', SkillController::class);
-    // Route::resource('/services', ServiceController::class);
+    Route::resource('/services', ServiceController::class);
     // Route::resource('/projects', ProjectController::class);
 
 });
-    Route::resource('/educations', EducationController::class);
-    Route::resource('/services', ServiceController::class);
 
-Route::get('/personal', function(){
-    return view('backend.dashboard');
-});
+// Route::get('/login', function(){
+//     return view('login');
+// });
 
-Route::get('/projects', function() {
-    return view('backend.project');
-});
 Route::get('/', function() {
     return view('frontend.portfolio');
 });
