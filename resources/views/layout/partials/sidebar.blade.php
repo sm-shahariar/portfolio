@@ -5,7 +5,7 @@
     <div class="position-sticky pt-3 mt-5">
         <ul class="nav flex-column ms-5">
             <li class="item">
-                <a href="#"><img src="{{ asset('images/dashboard-apps.svg') }}" alt="">Dashboard</a>
+                <a href="{{ route('dashboard') }}"><img src="{{ asset('images/dashboard-apps.svg') }}" alt="">Dashboard</a>
             </li>
             <li class="item">
                 <a href="{{ route('educations.index') }}"><img src="{{ asset('images/education.svg') }}" alt="">Education</a>
@@ -14,7 +14,7 @@
                 <a href="{{ route('skills.index') }}"><img src="{{ asset('images/qualification.svg') }}" alt="">Skill</a>
             </li> --}}
             <li class="item">
-                <a href="#"><img src="{{ asset('images/service.svg') }}" alt="">Service</a>
+                <a href="{{ route('services.index') }}"><img src="{{ asset('images/service.svg') }}" alt="">Service</a>
             </li>
             <li class="item">
                 <a href="#"><img src="{{ asset('images/project.svg') }}" alt="">Project</a>

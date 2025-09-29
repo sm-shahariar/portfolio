@@ -15,9 +15,12 @@
                             <img src="{{ asset('images/user.svg') }}" alt="" height="30px" width="30px">
                             </a>
                             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
-                                <li><span class="dropdown-item-text">Md Shahariar Rahman</span></li>
+                                <li><span class="dropdown-item-text">{{ auth()->user()->name }}</span></li>
                                 <li>
-                                    <button class="ms-3 btn btn-outline-danger">Logout</button>
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-inline">
+                                        @csrf
+                                        <button type="submit" class="ms-3 btn btn-outline-danger">Logout</button>
+                                    </form>
                                 </li>
                             </ul>
                         </li>
