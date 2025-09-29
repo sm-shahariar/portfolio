@@ -83,12 +83,12 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td><img src="{{ asset('images/project1.jpg') }}" alt="" height="40px" width="40px"></td>
+                                <td><img src="{{ asset('images/service (1).svg') }}" alt="" height="40px" width="40px"></td>
                                 <td>Project 1</td>
                                 <td>Web Development</td>
                             </tr>
                             <tr>
-                                <td><img src="{{ asset('images/project2.jpg') }}" alt="" height="40px" width="40px"></td>
+                                <td><img src="{{ asset('images/shopping-bag.svg') }}" alt="" height="40px" width="40px"></td>
                                 <td>Project 2</td>
                                 <td>Web Development</td>
                             </tr>
@@ -123,10 +123,10 @@
                 <div class="col-4 mt-4">
                     <div class="card shadow-lg rounded-lg card-recent-project" id="card-recent-project">
                         <div class="card-body text-white">
-                            <img src="{{ asset('images/education.svg') }}" alt="" height="60px" width="60px">
+                            <img src="{{ asset('images/service (1).svg') }}" alt="" height="60px" width="60px">
                             <div class="d-flex justify-content-between">
                                 <h5 class="mt-2">Project 1</h5>
-                                <h5 class="border rounded-pill px-2 py-1">e-commerce</h5>
+                                <h5 class="border rounded-pill px-2 py-1">Inventory</h5>
                             </div>
                             <p class="mt-1">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim non dolorum suscipit modi
@@ -138,7 +138,7 @@
                 <div class="col-4 mt-4">
                     <div class="card shadow-lg rounded-lg card-recent-project" id="card-recent-project">
                         <div class="card-body text-white">
-                            <img src="{{ asset('images/education.svg') }}" alt="" height="60px" width="60px">
+                            <img src="{{ asset('images/shopping-bag.svg') }}" alt="" height="60px" width="60px">
                             <div class="d-flex justify-content-between">
                                 <h5 class="mt-2">Project 2</h5>
                                 <h5 class="border rounded-pill px-2 py-1">e-commerce</h5>
@@ -153,10 +153,10 @@
                 <div class="col-4 mt-4">
                     <div class="card shadow-lg rounded-lg card-recent-project" id="card-recent-project">
                         <div class="card-body text-white">
-                            <img src="{{ asset('images/education.svg') }}" alt="" height="60px" width="60px">
+                            <img src="{{ asset('images/bio.svg') }}" alt="" height="60px" width="60px">
                             <div class="d-flex justify-content-between">
                                 <h5 class="mt-2">Project 3</h5>
-                                <h5 class="border rounded-pill px-2 py-1">e-commerce</h5>
+                                <h5 class="border rounded-pill px-2 py-1">Corporate</h5>
                             </div>
                             <p class="mt-1">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim non dolorum suscipit modi
