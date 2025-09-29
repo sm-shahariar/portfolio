@@ -112,7 +112,7 @@
         <h2 class="text-white text-center education">
             <img class="edu-pic" src="{{ asset('images/education.svg') }}" alt="" height="50px" width="50px">
             Education</h2>
-        <div class="row mt-5">
+        <div class="row" id="educations">
             <div class="col-6">
                 <div class="card shadow edu">
                     <div class="card-body">
@@ -410,7 +410,7 @@
                                         <span class="phone">+8801947116736</span></p>  
                                 </div>
                                 <div class="mt-4 d-flex flex-row">
-                                    <img src="" alt="" height="50px" width="50px" class="me-3">
+                                    <img src="{{ asset('images/github.svg') }}" alt="" height="50px" width="50px" class="me-3">
                                     <p class="d-flex flex-column text-white fs-5">Git Hub
                                         <span class="git">sm-shahariar</span></p>  
                                 </div>
@@ -426,7 +426,7 @@
                                 <form action="#" method="#">
                                     <input type="text" name="name" id="name" placeholder="Your Name" class="form-control mb-3 py-3 mt-5 name">
                                     <input type="email" name="email" id="email" placeholder="Your Email" class="form-control mb-3 py-2 emails">
-                                    <textarea name="message" id="message" rows="4" cols="4" placeholder="Your Message" class="form-control mb-3"></textarea>
+                                    <textarea name="message" id="message" rows="4" cols="4" placeholder="Your Message" class="form-control text-white mb-3"></textarea>
                                     <button type="submit" class="btn" id="message_btn">Send Message</button>
                                 </form>
                         </div>
