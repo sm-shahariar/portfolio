@@ -72,10 +72,37 @@
     color: white;
     background-color: #05293a !important;
     border-radius: 5px;
+    height: 42vh;
 }
 .add-skill{
     border:none;
     border-radius: 5px;
     font-weight: bolder;
     font-size: 20px;
+}
+.login_page{
+    width: auto;
+    height: auto;
+    background: linear-gradient(to bottom, #ff5fc7, #7b8ffe);
+}
+.login_card{
+    /* width: 80%; */
+    height: 80vh;
+}
+.title{
+    margin-top: 45px;
+}
+.title h3{
+    font-weight: bolder;
+    font-size: 30px;
+}
+.login_input{
+    background-color: rgb(212, 207, 207) !important;
+
+}
+.login_input::placeholder{
+    letter-spacing: 4px;
+}
+.form-check-input:checked {
+  background-color: #e735bd; /* pink background */
 }
