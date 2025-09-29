@@ -41,30 +41,7 @@
                 @empty
                     <h5 class="text-center text-black">No data found</h5>
                 @endforelse
-                {{-- <div class="col-3">
-                    <div class="card shadow rounded service_card" id="service2">
-                        <div class="card-body">
-                            <h5>Frontend Development</h5>
-                            <p class="mt-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias, iste quaerat! Ipsum, itaque?</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div class="card shadow rounded service_card" id="service3">
-                        <div class="card-body">
-                            <h5>Backend Development</h5>
-                            <p class="mt-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias, iste quaerat! Ipsum, itaque?</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div class="card shadow rounded service_card" id="service4">
-                        <div class="card-body">
-                            <h5>API Testing</h5>
-                            <p class="mt-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias, iste quaerat! Ipsum, itaque?</p>
-                        </div>
-                    </div>
-                </div> --}}
+               
             </div>
         </div>
     @elseif (Request::routeIs('services.edit'))
