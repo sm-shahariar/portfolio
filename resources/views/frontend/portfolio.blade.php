@@ -25,7 +25,7 @@
     </header>
     <div class="hero mb-5" id="home">
         <h2 class="text-white text-center mb-3" id="hero">Hi, I'm SM Shahariar Rahman</h2>
-        <h4 class="text-white text-center mb-3">Jr. PHP & Laravel Developer</h4>
+        <h4 class="text-white text-center mb-3" id="job_title"></h4>
         <h4 class="title text-center">Passionate about building clean and efficient web applications</h4>
 
         {{-- 1. Add a development something small picture.

@@ -39,7 +39,10 @@ header {
     margin-top: 100px !important;
 } */
 #hero{
-    background: linear-gradient(to right, #59ee2c, #f425a1);
+    /* background: linear-gradient(to right, #59ee2c, #f425a1); */
+    /* background: linear-gradient(to right, #ef2727, #55e857); */
+    /* background: linear-gradient(to right, #27caef, #55e857); */
+    background: linear-gradient(to right, #27ef77, #55e857);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: bolder;
